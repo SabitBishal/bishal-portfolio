@@ -6054,7 +6054,7 @@ html.lenis body {
 /*  3.5.1 Header Style 1
 /*----------------------------------------*/
 .bs-header-logo img {
-  max-width: 30%;
+  max-width: 60%;
 }
 
 .logo-white {
@@ -6062,6 +6062,7 @@ html.lenis body {
 }
 
 .bs-header-left {
+  	width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10107,7 +10108,7 @@ html.lenis body {
   display: none;
 }
 .bs-footer-one .bs-footer-widget-logo img {
-  max-width: 30%;
+  max-width: 50%;
 }
 .bs-footer-one .bs-footer-list {
   display: flex;
