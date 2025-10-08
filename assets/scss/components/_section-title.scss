@@ -1,0 +1,62 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  2.0 Section Title  
+/*----------------------------------------*/
+
+.bs-section{
+	&-title{
+		color: var(--bs-title-primary);
+		font-weight: var(--bs-fw-bold);
+		font-family: var(--bs-ff-title);
+		&.has-title-secondary{
+			color: var(--bs-title-secondary);
+		}
+	}
+	&-subtitle{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: var( --bs-theme-primary);
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 12px;
+		justify-content: center;
+		img{
+			width: 30px;
+			@media #{$sm,$xs}{
+				width: 25px;
+			}
+			&.has-thumb{
+				width: 24px;
+			}
+		}
+		@media #{$sm,$xs}{
+			font-size: 17px;
+			line-height: 27px;
+		}
+		&.has-text-style{
+			text-transform: capitalize;
+		}
+		&.has-light-color{
+			color:var(--bs-text-secondary);
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		&.has-light-text{
+			color: var(--bs-text-tertiary);
+		}
+		&.has-theme-green{
+			color: var(--bs-theme-green);
+		}
+		&.has-theme-orange{
+			color: var(--bs-theme-orange);
+		}
+		&.has-theme-yellow{
+			color: var(--bs-theme-yellow);
+		}
+	}
+}

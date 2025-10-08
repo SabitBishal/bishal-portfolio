@@ -1,0 +1,41 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  2.4 Background
+/*----------------------------------------*/
+
+
+// new style added
+
+.theme-bg {
+    background-color: var(--bs-theme-primary);
+}
+.theme-secondary-bg {
+    background-color: var(--bs-theme-secondary);
+}
+.theme-tertiary-bg {
+    background-color: var(--bs-theme-tertiary);
+}
+
+.primary-bg {
+    background-color: var(--bs-bg-primary);
+}
+
+.secondary-bg {
+    background-color: var(--bs-bg-secondary);
+}
+
+.tertiary-bg{
+    background-color: var(--bs-bg-tertiary);
+}
+
+.bs-bg-light{
+    background: var(--bs-bg-light);
+}
+.bs-bg-light-grey{
+    background: var(--bs-bg-light-grey);
+}
+
+.bs-dark-blue{
+    background: var(--bs-theme-dark-blue);
+}

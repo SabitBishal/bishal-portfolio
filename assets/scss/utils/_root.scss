@@ -1,0 +1,104 @@
+:root {
+
+  /**  @font family declaration */
+  --bs-ff-body: 'Urbanist', sans-serif;
+  --bs-ff-title: 'Urbanist', sans-serif;
+  --bs-ff-p: 'Urbanist', sans-serif;
+  --bs-ff-fontawesome: "Font Awesome 6 Pro";
+  --bs-ff-remixicon: "remixicon";
+
+  /** @color declaration */
+
+
+  // common color
+  --bs-white: #FFFFFF;
+  --bs-black: #000000;
+  --bs-light: #eee;
+
+  // theme color
+  --bs-theme-primary: #5777FF;
+  --bs-theme-secondary: #F3DABA;
+  --bs-theme-tertiary: #152A40;
+  --bs-theme-quaternary:  #B69D64;
+  --bs-theme-dark-blue: #101B30;
+  --bs-theme-green: #008D84;
+  --bs-theme-orange: #FF7140;
+  --bs-theme-yellow: #FdAF40;
+
+  // hover color
+  --bs-hover-primary: #05100B;
+  --bs-hover-secondary: #152A40;
+  --bs-hover-tertiary: #F3DABA;
+  --bs-hover-quaternary: #B69D64;
+  --bs-hover-green: #008D84;
+
+  // body text color
+  --bs-text-primary: #666666;
+  --bs-text-secondary: #52526C;
+  --bs-text-tertiary: #B69D64;
+
+  // title color
+  --bs-title-primary: #05100B;
+  --bs-title-secondary: #152A40;
+
+  // bg color
+  --bs-bg-primary: #F2F4FF;
+  --bs-bg-secondary: #F9FAFF;
+  --bs-bg-tertiary: #F5F3EF;
+  --bs-bg-quaternary: #152A40;
+  --bs-bg-light:#FFFAF1;
+  --bs-bg-light-grey:#F4F2F2;
+
+  // border color
+  --bs-border-primary: rgba(0, 0, 0, 0.05);
+  --bs-border-secondary:rgba(102, 102, 102, 0.2);
+  --bs-border-tertiary: #152A40;
+
+  //  placeholder color
+  --bs-placeholder: rgba(30, 30, 30, 0.4);
+
+
+  // rgba color
+  --bs-rgba-1: rgba(255, 255, 255, 0.07);
+  --bs-rgba-2: rgba(255, 255, 255, 0.05);
+
+
+  // extra color
+  --bs-rating-color: #FFC62D;
+
+
+  /** @font weight declaration */
+  --bs-fw-normal: normal;
+  --bs-fw-thin: 100;
+  --bs-fw-elight: 200;
+  --bs-fw-light: 300;
+  --bs-fw-regular: 400;
+  --bs-fw-medium: 500;
+  --bs-fw-sbold: 600;
+  --bs-fw-bold: 700;
+  --bs-fw-ebold: 800;
+  --bs-fw-black: 900;
+
+  /** @font size declaration */
+  --bs-fs-body: 18px;
+  --bs-fs-p: 18px;
+  --bs-fs-h1: 68px;
+  --bs-fs-h2: 50px;
+  --bs-fs-h3: 38px;
+  --bs-fs-h4: 28px;
+  --bs-fs-h5: 24px;
+  --bs-fs-h6: 20px;
+  --bs-fs-b1: 14px;
+  --bs-fs-b2: 16px;
+  --bs-fs-b3: 18px;
+  --bs-fs-b4: 22px;
+}
+
+$white: #ffffff;
+$black: #000000;
+$theme-black: #231F40;
+$primary: #5777FF;
+$secondary: #F3DABA;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #FF0000;

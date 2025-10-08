@@ -1,0 +1,30 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.2.1 Blog tag css
+/*----------------------------------------*/
+
+.bs-blog-tag {
+  a{
+    color: var(--bs-white);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px 12px 6px 12px;
+    border-radius: 4px;
+    background: var(--bs-theme-primary);
+    transition: .3s;
+    &:hover {
+      background: var(--bs-hover-primary);
+    }
+  }
+  &.has-bg-secondary {
+    a{
+      background: var(--bs-theme-secondary);
+      color: var(--bs-title-secondary);
+      &:hover {
+        background: var(--bs-white);
+      }
+    }
+  }
+}

@@ -1,0 +1,428 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  skill css
+/*----------------------------------------*/
+
+.bs-skill{
+    &-one{
+        padding-top: 70px;
+        &.has-space-none{
+            padding-top: 0;
+        }
+        .bs-skill-item{
+            background: var(--bs-white);
+            padding: 40px 40px 40px 40px;
+            border-radius: 4px 4px 4px 4px;
+            border: 1px solid transparent;
+            transition: .3s;
+            @media #{$xl}{
+                padding: 20px 20px 20px 20px;
+            }
+            @media #{$lg,$xs}{
+                padding: 30px 30px 30px 30px;
+            }
+            &:hover{
+                border-color: var(--bs-theme-primary);
+            }
+        }
+        .bs-skill-top{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .bs-skill-icon{
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bs-theme-primary);
+            border-radius: 50%;
+            img{
+                height: 34px;
+                width: auto;
+            }
+        }
+        .bs-skill-description{
+            margin-bottom: 48px;
+        }
+        .bs-skill-progress{
+            margin-top: 20px;
+        }
+        .single-progress{
+            overflow:visible;
+        }
+        .progress-number{
+            position: absolute;
+            top: -28px;
+            inset-inline-end: 0;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--bs-title-primary);
+        }
+    }
+    &-two{
+        padding-top: 40px;
+        .bs-skill-shape{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            @media #{$xxs}{
+                display: none;
+            }
+            img{
+                opacity: 0.4;
+            }
+        }
+        .bs-skill-item{
+            background: var(--bs-bg-secondary);
+            padding: 40px 40px 40px 40px;
+            border-radius: 4px 4px 4px 4px;
+            @media #{$xl}{
+                padding: 20px 20px 20px 20px;
+            }
+            @media #{$lg,$xs}{
+                padding: 30px 30px 30px 30px;
+            }
+        }
+        .bs-skill-top{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 75px;
+        }
+        .bs-skill-icon{
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(87, 119, 255, 0.07);
+            border-radius: 50%;
+            img{
+                height: 34px;
+                width: auto;
+            }
+        }
+        .bs-skill-description{
+            margin-bottom: 48px;
+        }
+        .bs-skill-progress{
+            margin-top: 20px;
+        }
+        .single-progress{
+            overflow:visible;
+        }
+        .progress-number{
+            position: absolute;
+            top: -28px;
+            inset-inline-end: 0;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--bs-black);
+        }
+        .bs-skill{
+            &-tab{
+                .nav{
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    border: 1px solid var(--bs-border-primary);
+                    border-radius: 50px;
+                    padding: 5px;
+                }
+                a{
+                    border-radius: 30px;
+                    padding: 8px 20px 8px 20px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    &.active{
+                        background: var(--bs-theme-primary);
+                        color: var(--bs-white);
+                    }
+                }
+            }
+        }
+        &.has-theme-yellow{
+            padding-top: 0;
+            .bs-skill-item{
+                background: transparent;
+                padding: 30px 30px 30px 30px;
+                border: 1px solid rgba(21, 42, 64, 0.65);
+                transition: .3s;
+                @media #{$xl}{
+                    padding: 15px 15px 15px 15px;
+                }
+                &:hover{
+                    border-color: var(--bs-theme-yellow);
+                }
+            }
+            .bs-skill-icon{
+                background: none;
+                background: none;
+            border-radius: unset;
+                svg{
+                    path{
+                        fill: var(--bs-theme-yellow);
+                    }
+                }
+            }
+            .progress-bar{
+                background-color: var(--bs-theme-yellow);
+            }
+        }
+    }
+    &-three{
+        .bs-skill-wrapper{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 30px;
+            @media #{$lg}{
+                grid-template-columns: repeat(4,1fr);
+            }
+            @media #{$md,$sm}{
+                grid-template-columns: repeat(3,1fr);
+            }
+            @media #{$xs}{
+                grid-template-columns: repeat(2,1fr);
+            }
+            @media #{$xxs}{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        .bs-skill-item{
+            background: var(--bs-bg-secondary);
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+            border-radius: 15px;
+            border: 1px solid var(--bs-border-primary);
+        }
+        .bs-skill-icon{
+            margin-bottom: 20px;
+            img{
+                width: 50px;
+            }
+        }
+        .bs-skill-title{
+            margin-bottom: 30px;
+        }
+        .progress{
+            height: 40px;
+            border-radius: 70px;
+            background: #f2f4ff;
+        }
+        .progress-bar{
+            border-radius: 70px;
+            background-color: var(--bs-white);
+        }
+        .progress-number{
+            position: absolute;
+            font-size: 16px;
+            right: 0;
+            z-index: 1;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            font-weight: 700;
+            color: var(--bs-text-primary);
+        }
+    }
+    &-four{
+        padding-bottom: 45px;
+        .bs-skill-content{
+            margin-left: 50px;
+            @media #{$md,$sm,$xs}{
+                margin-left: 0;
+            }
+        }
+        .bs-skill-progress{
+            max-width: 525px;
+            @media #{$md,$sm,$xs}{
+                max-width: 100%;
+            }
+            .single-progress{
+                overflow: visible;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+            .progress-top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .progress-title{
+                font-weight: 600;
+            }
+            .progress-bar{
+                background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+                background-size: 1rem 1rem;
+                border-radius: 0;
+            }
+            .progress-number{
+                font-weight: 700;
+                font-size: 16px;
+                color: var(--bs-black);
+                position: static;
+            }
+            .progress{
+                height: 7px;
+                background-color: #eee;
+            }
+        }
+    }
+    &-five{
+        padding-bottom: 200px;
+        @media #{$xl}{
+            padding-bottom: 180px;
+        }
+        @media #{$lg}{
+            padding-bottom: 160px;
+        }
+        @media #{$md}{
+            padding-bottom: 80px;
+        }
+        @media #{$sm,$xs} {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .bs-skill-shape{
+            position: absolute;
+            left: 33%;
+            bottom: 50px;
+            transform: rotateZ(-15deg) !important;
+            @media #{$md,$sm,$xs}{
+                display: none;
+            }
+            img{
+                width: 300px;
+            }
+        }
+      .bs-section-paragraph{
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .bs-skill-content{
+        margin-inline-start: 50px;
+        @media #{$md,$sm,$xs}{
+            margin-inline-start: 0px;
+        }
+      }
+      .bs-skill-progress{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        @media #{$xs}{
+            grid-template-columns: repeat(1,1fr);
+        }
+      }
+      .single-progress{
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+      }
+      .progress-title{
+        margin-bottom: 6px;
+      }
+      .progress-number{
+        font-size: 16px;
+        color: var(--bs-black);
+        font-weight: 700;
+      }
+      .progress-bar{
+        background: var(--bs-theme-green);
+      }
+    }
+    &-six{
+        .bs-skill-wrapper{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+            margin-inline-end: 30px;
+            @media #{$xl}{
+                margin-inline-end: 20px;
+            }
+            @media #{$lg,$md,$sm,$xs}{
+                margin-inline-end: 0px;
+            }
+            @media #{$xs}{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        .bs-skill-item{
+            background: var(--bs-bg-light);
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .bs-skill-icon{
+            margin-bottom: 20px;
+            svg{
+                width: 60px;
+                height: 60px;
+                path{
+                    fill: var(--bs-theme-orange) !important;
+                }
+            }
+        }
+        .bs-skill-title{
+            margin-bottom: 30px;
+        }
+        .progress{
+            height: 40px;
+            border-radius: 70px;
+            background: var(--bs-black);
+        }
+        .progress-bar{
+            border-radius: 70px;
+            background-color: var(--bs-theme-orange);
+        }
+        .progress-number{
+            position: absolute;
+            font-size: 16px;
+            right: 0;
+            z-index: 1;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            font-weight: 700;
+            color: var(--bs-white);
+        }
+        .bs-skill-feature-list{
+            margin: 30px 0 40px;
+            ul{
+                li{
+                    list-style: none;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding-inline-start: 22px;
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                    &::before{
+                        content: "\f178";
+                        color: var(--bs-theme-orange);
+                        font-size: 14px;
+                        margin: 0;
+                        font-weight: 400;
+                        display: inline-block;
+                        font-family: var(--bs-ff-fontawesome);
+                        position: absolute;
+                        inset-inline-start: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

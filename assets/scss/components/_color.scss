@@ -1,0 +1,15 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  2.4 Color Short Code
+/*----------------------------------------*/
+
+.bs-text-primary {
+    color: var(--bs-theme-primary);
+}
+.bs-theme-orange{
+    color: var(--bs-theme-orange);
+}
+.bs-theme-yellow{
+    color: var(--bs-theme-yellow);
+}
