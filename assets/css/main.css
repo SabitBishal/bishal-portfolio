@@ -2754,6 +2754,24 @@ input[type=checkbox] ~ label:hover {
   cursor: pointer;
 }
 
+/* Container styles */
+.ajax-response {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    display: block; /* Ensures it takes up space */
+}
+
+/* Success State (Added by JS) */
+.ajax-response.success {
+    color: #28a745; /* Green */
+}
+
+/* Error State (Added by JS) */
+.ajax-response.error {
+    color: #dc3545; /* Red */
+}
+
 /*----------------------------------------*/
 /*  2.6 social
 /*----------------------------------------*/
@@ -4077,13 +4095,13 @@ code {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
+  width: 100px;
   text-align: center;
 }
 
 .loader .loader-icon img {
   animation: loaderpulse alternate 900ms infinite;
-  width: 40px;
+  width: 100px;
 }
 
 @keyframes loaderspin {
